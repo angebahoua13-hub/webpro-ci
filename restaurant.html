@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LE BON RESTO | Restaurant</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:#fffaf3;color:#292019}
+header{padding:22px;text-align:center;background:#382218;color:white}
+header h2{margin:0;color:#f4c47a}
+.hero{text-align:center;padding:75px 20px;background:linear-gradient(135deg,#63371f,#bd7940);color:white}
+.hero h1{font-size:42px}
+.hero p{color:#fff0dc}
+section{padding:35px 7%}
+h2{text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px}
+.card{background:white;padding:22px;border-radius:14px;box-shadow:0 4px 15px #0001}
+.card h3{color:#8b4a27}
+.price{font-weight:bold;color:#a65d2e}
+.btn{display:inline-block;background:#178b50;color:white;text-decoration:none;padding:13px 20px;border-radius:8px;margin-top:12px}
+.contact{text-align:center;background:#382218;color:white;padding:45px 20px}
+footer{text-align:center;padding:20px;color:#777}
+</style>
+</head>
+<body>
+<header><h2>LE BON RESTO</h2><p>La saveur qui vous rassemble</p></header>
+<div class="hero">
+<h1>Bienvenue chez nous !</h1>
+<p>Découvrez une cuisine savoureuse et un accueil chaleureux.</p>
+<a class="btn" href="#menu">Découvrir le menu</a>
+</div>
+<section id="menu">
+<h2>Notre menu</h2>
+<div class="grid">
+<div class="card"><h3>Poulet braisé</h3><p>Servi avec accompagnement au choix.</p><p class="price">3 500 FCFA</p></div>
+<div class="card"><h3>Poisson braisé</h3><p>Une spécialité généreuse et savoureuse.</p><p class="price">4 000 FCFA</p></div>
+<div class="card"><h3>Riz sauce</h3><p>Un délicieux repas traditionnel.</p><p class="price">1 500 FCFA</p></div>
+<div class="card"><h3>Jus naturel</h3><p>Une boisson fraîche et fruitée.</p><p class="price">1 000 FCFA</p></div>
+</div>
+</section>
+<section class="contact">
+<h2>Envie de commander ?</h2>
+<p>Contactez-nous directement sur WhatsApp.</p>
+<a class="btn" id="order" href="#">Commander sur WhatsApp</a>
+</section>
+<footer>Site de démonstration créé par WEBPRO CI</footer>
+<script>
+const numero = "2250172595463";
+document.getElementById("order").href =
+"https://wa.me/"+numero+"?text="+encodeURIComponent("Bonjour, je souhaite passer une commande.");
+</script>
+</body>
+</html>
