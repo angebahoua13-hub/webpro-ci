@@ -1,0 +1,14 @@
+{
+  "name": "WEBPRO CI",
+  "short_name": "WEBPRO CI",
+  "description": "Création de sites web professionnels",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#120d20",
+  "theme_color": "#7137c8",
+  "icons": [
+    {"src":"icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"icon-512.png","sizes":"512x512","type":"image/png"}
+  ]
+}

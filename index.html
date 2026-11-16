@@ -35,6 +35,10 @@ h2{text-align:center;font-size:32px;margin-bottom:15px}
 footer{text-align:center;padding:25px;color:#aaa}
 @media(max-width:600px){header{padding:17px 5%;flex-wrap:wrap;gap:12px}nav a{margin-left:8px;font-size:12px}.hero{padding:70px 6%}section{padding:50px 6%}}
 </style>
+
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#7137c8">
+<meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 <body>
 <header>
@@ -112,6 +116,14 @@ const numero = "2250172595463";
 document.getElementById("whatsapp").href =
 "https://wa.me/" + numero + "?text=" +
 encodeURIComponent("Bonjour WEBPRO CI, je souhaite créer un site web.");
+</script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js");
+  });
+}
 </script>
 </body>
 </html>
