@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="WEBPRO CI crée des sites web modernes pour les commerçants et entreprises en Côte d'Ivoire.">
+<title>WEBPRO CI | Création de sites web</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#0b0b18;color:white;line-height:1.6}
+header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;background:#101020}
+.logo{font-size:24px;font-weight:bold;color:#a78bfa}
+nav a{color:white;text-decoration:none;margin-left:15px;font-size:14px}
+.hero{text-align:center;padding:90px 7%;background:radial-gradient(ellipse at top,#382078,#0b0b18 75%)}
+.tag{color:#c4b5fd;font-weight:bold}
+h1{font-size:clamp(36px,7vw,60px);line-height:1.15;margin:20px auto;max-width:850px}
+h1 span{color:#a78bfa}
+p{color:#c9c9d8}
+.hero p{max-width:650px;margin:20px auto}
+.btn{display:inline-block;background:#8055e8;color:white;text-decoration:none;padding:13px 22px;border-radius:9px;font-weight:bold;margin:12px 5px}
+.btn-outline{background:transparent;border:1px solid #a78bfa}
+section{padding:65px 7%}
+h2{text-align:center;font-size:32px;margin-bottom:15px}
+.sub{text-align:center;margin:0 auto 35px;max-width:600px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#19192d;border:1px solid #34344b;padding:25px;border-radius:15px}
+.card h3{color:#c4b5fd;margin-bottom:10px}
+.preview{height:130px;border-radius:10px;margin-bottom:18px;display:flex;align-items:center;justify-content:center;text-align:center;font-size:23px;font-weight:bold;padding:15px}
+.restaurant{background:linear-gradient(135deg,#783d22,#e4a75d)}
+.boutique{background:linear-gradient(135deg,#40236d,#bd91ed)}
+.salon{background:linear-gradient(135deg,#173e3a,#80c5ae)}
+.about{text-align:center;max-width:700px;margin:auto}
+.contact{text-align:center;background:#19192d}
+footer{text-align:center;padding:25px;color:#aaa}
+@media(max-width:600px){header{padding:17px 5%;flex-wrap:wrap;gap:12px}nav a{margin-left:8px;font-size:12px}.hero{padding:70px 6%}section{padding:50px 6%}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">WEBPRO CI.</div>
+<nav>
+<a href="#services">Services</a>
+<a href="#modeles">Modèles</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<main class="hero">
+<div class="tag">CRÉATION WEB EN CÔTE D'IVOIRE</div>
+<h1>Votre entreprise mérite un <span>site web professionnel.</span></h1>
+<p>Nous créons des sites modernes, élégants et adaptés aux smartphones pour aider les commerçants et entrepreneurs à développer leur présence sur Internet.</p>
+<a class="btn" href="#modeles">Voir nos modèles</a>
+<a class="btn btn-outline" href="#contact">Nous contacter</a>
+</main>
+
+<section id="services">
+<h2>Nos services</h2>
+<p class="sub">Des solutions numériques adaptées à votre activité.</p>
+<div class="cards">
+<div class="card"><h3>Sites vitrines</h3><p>Présentez votre entreprise, vos services et vos coordonnées.</p></div>
+<div class="card"><h3>Sites commerciaux</h3><p>Mettez vos produits en valeur et recevez des demandes de commandes.</p></div>
+<div class="card"><h3>Design mobile</h3><p>Des sites adaptés aux téléphones, tablettes et ordinateurs.</p></div>
+</div>
+</section>
+
+<section id="modeles">
+<h2>Nos modèles de démonstration</h2>
+<p class="sub">Voici quelques exemples de sites que nous pouvons créer pour différents métiers.</p>
+<div class="cards">
+<div class="card">
+<div class="preview restaurant">LE BON RESTO</div>
+<h3>Restaurant</h3>
+<p>Un modèle pour présenter un restaurant, ses menus et ses contacts.</p>
+<a class="btn" href="#contact">Commander un modèle</a>
+</div>
+<div class="card">
+<div class="preview boutique">MA BOUTIQUE</div>
+<h3>Boutique</h3>
+<p>Un modèle pour exposer des vêtements, accessoires et produits.</p>
+<a class="btn" href="#contact">Commander un modèle</a>
+</div>
+<div class="card">
+<div class="preview salon">BEAUTÉ & STYLE</div>
+<h3>Salon de coiffure</h3>
+<p>Un modèle pour présenter les prestations et les horaires d'un salon.</p>
+<a class="btn" href="#contact">Commander un modèle</a>
+</div>
+</div>
+</section>
+
+<section>
+<div class="about">
+<h2>Pourquoi choisir WEBPRO CI ?</h2>
+<p>Nous aidons les petites entreprises et les entrepreneurs à présenter leurs activités en ligne grâce à des sites modernes, simples et adaptés à leurs besoins.</p>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2>Vous avez un projet ?</h2>
+<p>Parlons de votre futur site web sur WhatsApp.</p>
+<a class="btn" id="whatsapp" href="#">Discuter sur WhatsApp</a>
+<p style="font-size:12px;margin-top:12px">WEBPRO CI — Votre partenaire numérique.</p>
+</section>
+
+<footer>© 2026 WEBPRO CI. Tous droits réservés.</footer>
+
+<script>
+// Remplace 225XXXXXXXXXX par ton numéro WhatsApp
+// avec l'indicatif du pays, sans + ni espaces.
+const numero = "2250172595463";
+document.getElementById("whatsapp").href =
+"https://wa.me/" + numero + "?text=" +
+encodeURIComponent("Bonjour WEBPRO CI, je souhaite créer un site web.");
+</script>
+</body>
+</html>
