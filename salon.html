@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Élégance Coiffure | Salon de beauté</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#fffaf7;color:#29201f}
+header{background:#241b20;color:white;text-align:center;padding:45px 18px}
+header h1{font-size:35px;margin:0 0 12px}
+header p{color:#f0c9d5}
+nav{background:#382832;padding:15px;text-align:center}
+nav a{color:white;text-decoration:none;margin:0 10px;font-size:14px}
+.hero{text-align:center;padding:55px 20px;background:#f5e5e9}
+.hero h2{font-size:30px;color:#542c40}
+.hero p{line-height:1.7}
+.btn{display:inline-block;background:#a33e68;color:white;padding:14px 22px;border-radius:25px;text-decoration:none;margin-top:12px;font-weight:bold}
+section{padding:38px 18px;text-align:center}
+h2{color:#713a53}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;max-width:950px;margin:25px auto}
+.item{background:white;border-radius:15px;padding:22px;box-shadow:0 3px 14px #00000012}
+.pic{font-size:65px;background:#f5e5e9;border-radius:12px;padding:20px}
+.price{color:#a33e68;font-weight:bold}
+footer{background:#241b20;color:white;text-align:center;padding:25px}
+</style>
+</head>
+<body>
+<header>
+<h1>ÉLÉGANCE COIFFURE</h1>
+<p>Votre beauté, notre passion</p>
+</header>
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#services">Prestations</a>
+<a href="#tarifs">Tarifs</a>
+<a href="#contact">Contact</a>
+</nav>
+<div class="hero" id="accueil">
+<h2>Révélez votre élégance</h2>
+<p>Bienvenue chez Élégance Coiffure. Découvrez nos prestations et prenez rendez-vous facilement.</p>
+<a class="btn" href="#contact">Prendre rendez-vous</a>
+</div>
+<section id="services">
+<h2>Nos prestations</h2>
+<div class="grid">
+<div class="item"><div class="pic">💇🏽‍♀️</div><h3>Tresses</h3><p>Des coiffures élégantes et soignées.</p></div>
+<div class="item"><div class="pic">💈</div><h3>Coupe</h3><p>Des coupes adaptées à votre style.</p></div>
+<div class="item"><div class="pic">✨</div><h3>Soins capillaires</h3><p>Des soins pour prendre soin de vos cheveux.</p></div>
+</div>
+</section>
+<section id="tarifs">
+<h2>Nos tarifs indicatifs</h2>
+<div class="grid">
+<div class="item"><h3>Tresses simples</h3><p class="price">À partir de 5 000 FCFA</p></div>
+<div class="item"><h3>Coupe</h3><p class="price">À partir de 2 000 FCFA</p></div>
+<div class="item"><h3>Soins capillaires</h3><p class="price">À partir de 3 000 FCFA</p></div>
+</div>
+<p>Tarifs de démonstration à adapter selon le salon.</p>
+</section>
+<section id="contact">
+<h2>Prenez rendez-vous</h2>
+<p>Contactez-nous directement sur WhatsApp pour réserver votre séance.</p>
+<a class="btn" id="whatsapp" href="#">Réserver sur WhatsApp</a>
+</section>
+<footer>
+<p>ÉLÉGANCE COIFFURE</p>
+<p>© 2026 - Tous droits réservés</p>
+<p>Site réalisé par WEBPRO CI</p>
+</footer>
+<script>
+const numero = "2250172595463";
+document.getElementById("whatsapp").href =
+"https://wa.me/" + numero + "?text=" +
+encodeURIComponent("Bonjour, je souhaite prendre rendez-vous.");
+</script>
+</body>
+</html>
